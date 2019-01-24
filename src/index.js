@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from './components/App/App';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import * as firebase from "firebase/app";
+
+const config = {
+    apiKey: "AIzaSyCzfi9KqtPDj_itzIDdbYSaNFl1Axent_s",
+    authDomain: "awesomeblossomart.firebaseapp.com",
+    databaseURL: "https://awesomeblossomart.firebaseio.com",
+    projectId: "awesomeblossomart",
+    storageBucket: "awesomeblossomart.appspot.com",
+    messagingSenderId: "705293897375"
+};
+
+firebase.initializeApp(config);
+
+ReactDOM.render(<App/>, document.getElementById('root'));

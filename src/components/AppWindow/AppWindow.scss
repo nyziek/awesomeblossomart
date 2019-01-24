@@ -1,0 +1,8 @@
+@import "../../variables";
+
+.appWindow {
+    height: calc(100vh - 5rem);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

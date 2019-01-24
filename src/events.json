@@ -1,0 +1,96 @@
+{
+    "events" : [
+        {
+            "id": 0,
+            "city": "Warszawa",
+            "date": "27.01.2019",
+            "name": "Szkolenie Face-painting",
+            "maxAttendees": 10,
+            "level": "Podstawowy",
+            "descriptionShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "descriptionFull": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros dolor, venenatis vitae viverra nec, imperdiet ac neque. Sed at ex lorem. Vestibulum vitae nulla eu diam commodo blandit posuere ut mi. Donec ullamcorper ac ligula non commodo. Nam suscipit consequat lectus, a ultrices mauris malesuada non. Nunc pretium ante orci, at sodales velit sollicitudin eu. Nulla non nibh tincidunt, aliquam mauris in, mattis nibh. Mauris a tristique lectus. Sed diam dolor, tincidunt at luctus in, pretium et ipsum. Morbi lacinia egestas tortor. Aliquam diam risus, vestibulum ac tellus vitae, porta fringilla diam.",
+            "attendees": [
+                {
+                    "name" : "Maja",
+                    "surname": "Pszczółkowska",
+                    "email": "bzzzy@bzyk.com",
+                    "phone": "666666666",
+                    "paid": false
+                },
+                {
+                    "name" : "Alicja",
+                    "surname": "Makota",
+                    "email": "naplotek@mrug.com",
+                    "phone": "909090909",
+                    "paid": false
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "city": "Poznań",
+            "date": "03.02.2019",
+            "name": "Szkolenie Face-painting",
+            "maxAttendees": 10,
+            "level": "Zaawansowany",
+            "descriptionShort": "Vestibulum vitae nulla eu diam commodo blandit posuere ut mi.",
+            "descriptionFull": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros dolor, venenatis vitae viverra nec, imperdiet ac neque. Sed at ex lorem. Vestibulum vitae nulla eu diam commodo blandit posuere ut mi. Donec ullamcorper ac ligula non commodo. Nam suscipit consequat lectus, a ultrices mauris malesuada non. Nunc pretium ante orci, at sodales velit sollicitudin eu. Nulla non nibh tincidunt, aliquam mauris in, mattis nibh. Mauris a tristique lectus. Sed diam dolor, tincidunt at luctus in, pretium et ipsum. Morbi lacinia egestas tortor. Aliquam diam risus, vestibulum ac tellus vitae, porta fringilla diam.",
+            "attendees": [
+                {
+                    "name" : "Katarzyna",
+                    "surname": "Wielka",
+                    "email": "caryca@rus.ru",
+                    "phone": "121212123",
+                    "paid": true
+                },
+                {
+                    "name" : "Bubu",
+                    "surname": "Miś",
+                    "email": "bubu@yellowstonepark.com",
+                    "phone": "837213911",
+                    "paid": false
+                },
+                {
+                    "name" : "Rick",
+                    "surname": "Astley",
+                    "email": "nevergonna@giveyou.up",
+                    "phone": "838732291",
+                    "paid": true
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "city": "Gdańsk",
+            "date": "19.02.2019",
+            "name": "Szkolenie Face-painting",
+            "maxAttendees": 10,
+            "level": "Podstawowy",
+            "descriptionShort": "Nulla non nibh tincidunt, aliquam mauris in, mattis nibh.",
+            "descriptionFull": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros dolor, venenatis vitae viverra nec, imperdiet ac neque. Sed at ex lorem. Vestibulum vitae nulla eu diam commodo blandit posuere ut mi. Donec ullamcorper ac ligula non commodo. Nam suscipit consequat lectus, a ultrices mauris malesuada non. Nunc pretium ante orci, at sodales velit sollicitudin eu. Nulla non nibh tincidunt, aliquam mauris in, mattis nibh. Mauris a tristique lectus. Sed diam dolor, tincidunt at luctus in, pretium et ipsum. Morbi lacinia egestas tortor. Aliquam diam risus, vestibulum ac tellus vitae, porta fringilla diam.",
+            "attendees": []
+        },
+        {
+            "id": 3,
+            "city": "Katowice",
+            "date": "27.02.2019",
+            "name": "Szkolenie Face-painting",
+            "maxAttendees": 8,
+            "level": "Podstawowy",
+            "descriptionShort": "Aliquam diam risus, vestibulum ac tellus vitae, porta fringilla diam.",
+            "descriptionFull": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros dolor, venenatis vitae viverra nec, imperdiet ac neque. Sed at ex lorem. Vestibulum vitae nulla eu diam commodo blandit posuere ut mi. Donec ullamcorper ac ligula non commodo. Nam suscipit consequat lectus, a ultrices mauris malesuada non. Nunc pretium ante orci, at sodales velit sollicitudin eu. Nulla non nibh tincidunt, aliquam mauris in, mattis nibh. Mauris a tristique lectus. Sed diam dolor, tincidunt at luctus in, pretium et ipsum. Morbi lacinia egestas tortor. Aliquam diam risus, vestibulum ac tellus vitae, porta fringilla diam.",
+            "attendees": []
+        },
+        {
+            "id": 4,
+            "city": "Olecko",
+            "date": "05.03.2019",
+            "name": "Szkolenie Face-painting",
+            "maxAttendees": 6,
+            "level": "Podstawowy",
+            "descriptionShort": "Maecenas eros dolor, venenatis vitae viverra nec, imperdiet ac neque. Sed at ex lorem. Vestibulum vitae nulla eu diam commodo blandit posuere ut mi.",
+            "descriptionFull": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros dolor, venenatis vitae viverra nec, imperdiet ac neque. Sed at ex lorem. Vestibulum vitae nulla eu diam commodo blandit posuere ut mi. Donec ullamcorper ac ligula non commodo. Nam suscipit consequat lectus, a ultrices mauris malesuada non. Nunc pretium ante orci, at sodales velit sollicitudin eu. Nulla non nibh tincidunt, aliquam mauris in, mattis nibh. Mauris a tristique lectus. Sed diam dolor, tincidunt at luctus in, pretium et ipsum. Morbi lacinia egestas tortor. Aliquam diam risus, vestibulum ac tellus vitae, porta fringilla diam.",
+            "attendees": []
+        }
+    ]
+}

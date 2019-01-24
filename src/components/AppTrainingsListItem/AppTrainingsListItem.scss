@@ -1,0 +1,62 @@
+@import "../../variables";
+
+.trainingsList th,
+.trainingsList td {
+    background: $primaryTextColor;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.2rem 0.1rem 0.2rem;
+    text-align: center;
+}
+
+.trainingsList th {
+    background: $bgColorDarkest;
+    color: $primaryTextColor;
+}
+
+.trainingDescriptionHeader {
+    width: 60%;
+}
+
+.trainingDescription {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainingShortDescription {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainingShortDescription span {
+    width: 95%;
+    padding-right: 0.3rem;
+    line-height: 1.1rem;
+}
+
+.trainingShortDescription i {
+    width: 5%;
+    color: $emphasizeColor;
+    cursor: pointer;
+}
+
+.trainingFullDescription {
+    background: $bgColorDark;
+    border-radius: 0.5rem;
+    display: none;
+    width: 98%;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    line-height: 1.1rem;
+    color: $primaryTextColor
+}
+
+.joinTrainingButtonHolder i {
+    color: $emphasizeColor;
+    cursor: pointer;
+    margin-top: 0.4rem;
+}

@@ -1,0 +1,11 @@
+@import "../../variables";
+
+.appMainWindow {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    background-color: $bgColorLight;
+    background-image: url("../../assets/gray-floral.png");
+    color: $secondaryTextColor;
+}
