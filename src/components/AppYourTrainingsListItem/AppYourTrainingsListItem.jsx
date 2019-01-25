@@ -1,11 +1,8 @@
 import React from 'react';
-import './AppTrainingsListItem.scss';
+import './AppYourTrainingsListItem.scss';
+import {Link} from "react-router-dom";
 
-import {
-    Link
-} from 'react-router-dom'
-
-class AppTrainingsListItem extends React.Component {
+class AppYourTrainingsListItem extends React.Component {
 
     handleTrainingDescriptionInfoShow = (event) => {
 
@@ -16,6 +13,10 @@ class AppTrainingsListItem extends React.Component {
             event.target.parentElement.nextElementSibling.style.display = "block";
             event.target.classList.add("clicked");
         }
+    };
+
+    handleTrainingDelete = (event) => {
+        console.log("usuwam " + this.props.event.city);
     };
 
     render() {
@@ -41,19 +42,27 @@ class AppTrainingsListItem extends React.Component {
                     </div>
                 </td>
                 <td>
-                    {!this.props.event.attendees
-                        ? "0"
-                        : this.props.event.attendees.length
-                    } / {this.props.event.maxAttendees}
+                    <div className = "trainingAttendees">
+                        <span>
+                            {!this.props.event.attendees
+                                ? "0"
+                                : this.props.event.attendees.length
+                            } / {this.props.event.maxAttendees}
+                        </span>
+                        <Link to = {`/attendees/${this.props.event.id}`}>
+                            <i className = "fas fa-search-plus"></i>
+                        </Link>
+                    </div>
                 </td>
-                <td className = "joinTrainingButtonHolder">
-                    <Link to = {`/join/${this.props.event.id}`}>
-                        <i className = "fas fa-plus-circle"></i>
-                    </Link>
+                <td>
+                    <div className = "editTrainingButtonHolder">
+                        <i className = "fas fa-edit"></i>
+                        <i className = "far fa-trash-alt" onClick = {this.handleTrainingDelete}></i>
+                    </div>
                 </td>
             </tr>
         );
     }
 }
 
-export default AppTrainingsListItem;
+export default AppYourTrainingsListItem;

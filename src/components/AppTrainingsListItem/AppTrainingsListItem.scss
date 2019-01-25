@@ -3,6 +3,7 @@
 .trainingsList th,
 .trainingsList td {
     background: $primaryTextColor;
+    border: 0.1rem solid $bgColorDarkest;
     border-radius: 0.5rem;
     padding: 0.2rem 0.2rem 0.1rem 0.2rem;
     text-align: center;
@@ -23,6 +24,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.trainingName {
+    font-weight: bold;
+    border-bottom: 0.05rem solid $bgColorDark;
+    margin-bottom: 0.5rem;
+    padding: 0 2rem;
 }
 
 .trainingShortDescription {

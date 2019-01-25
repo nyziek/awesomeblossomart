@@ -7,9 +7,11 @@ import {
 } from 'react-router-dom';
 
 import AppNav from "../AppNav/AppNav";
-import AppMainWindow from "../AppMainWindow/AppMainWindow";
 import AppYourTrainings from "../AppYourTrainings/AppYourTrainings";
-import AppAddTraining from "../AppAddTraining/AppAddTraining";
+import AppAddTrainingForm from "../AppAddTrainingForm/AppAddTrainingForm";
+import AppTrainingsList from "../AppTrainingsList/AppTrainingsList";
+import AppJoinTrainingForm from "../AppJoinTrainingForm/AppJoinTrainingForm";
+import AppShowAttendees from "../AppShowAttendees/AppShowAttendees";
 
 class AppWindow extends React.Component {
     render() {
@@ -17,17 +19,15 @@ class AppWindow extends React.Component {
             <HashRouter>
                 <div className = "appWindow">
                     <AppNav/>
-                    <Switch>
-                        <Route exact path = "/" render = {() =>
-                            <AppMainWindow events = {this.props.events} isAuthed = {true}/>
-                        }/>
-                        <Route path = "/your-trainings" render = {() =>
-                            <AppYourTrainings events = {this.props.events} isAuthed = {true}/>
-                        }/>
-                        <Route path = "/add-training" render = {() =>
-                            <AppAddTraining events = {this.props.events} isAuthed = {true}/>
-                        }/>
-                    </Switch>
+                    <div className = "appMainWindow">
+                        <Switch>
+                            <Route exact path = "/" component = {AppTrainingsList}/>
+                            <Route path = "/your-trainings" component = {AppYourTrainings}/>
+                            <Route path = "/add-training" component = {AppAddTrainingForm}/>
+                            <Route path = "/join/:id" component = {AppJoinTrainingForm}/>
+                            <Route path = "/attendees/:id" component = {AppShowAttendees}/>
+                        </Switch>
+                    </div>
                 </div>
             </HashRouter>
         );

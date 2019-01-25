@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.trainingAttendees {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.editTrainingButtonHolder {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.editTrainingButtonHolder i,
+.trainingAttendees i {
+    color: $emphasizeColor;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.editTrainingButtonHolder i.fa-trash-alt
+{
+    color: $bgColorDark2;
+    cursor: pointer;
+    margin-top: 0;
+}

@@ -1,10 +1,9 @@
 {
     "events" : [
         {
-            "id": 0,
             "city": "Warszawa",
-            "date": "27.01.2019",
-            "name": "Szkolenie Face-painting",
+            "date": "2019-01-27",
+            "name": "Szkolenie Face Painting",
             "maxAttendees": 10,
             "level": "Podstawowy",
             "descriptionShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -27,10 +26,9 @@
             ]
         },
         {
-            "id": 1,
             "city": "Poznań",
-            "date": "03.02.2019",
-            "name": "Szkolenie Face-painting",
+            "date": "2019-02-03",
+            "name": "Szkolenie Face Painting",
             "maxAttendees": 10,
             "level": "Zaawansowany",
             "descriptionShort": "Vestibulum vitae nulla eu diam commodo blandit posuere ut mi.",
@@ -60,10 +58,9 @@
             ]
         },
         {
-            "id": 2,
             "city": "Gdańsk",
-            "date": "19.02.2019",
-            "name": "Szkolenie Face-painting",
+            "date": "2019-02-19",
+            "name": "Szkolenie Face Painting",
             "maxAttendees": 10,
             "level": "Podstawowy",
             "descriptionShort": "Nulla non nibh tincidunt, aliquam mauris in, mattis nibh.",
@@ -71,10 +68,9 @@
             "attendees": []
         },
         {
-            "id": 3,
             "city": "Katowice",
-            "date": "27.02.2019",
-            "name": "Szkolenie Face-painting",
+            "date": "2019-02-24",
+            "name": "Szkolenie Face Painting",
             "maxAttendees": 8,
             "level": "Podstawowy",
             "descriptionShort": "Aliquam diam risus, vestibulum ac tellus vitae, porta fringilla diam.",
@@ -82,10 +78,9 @@
             "attendees": []
         },
         {
-            "id": 4,
             "city": "Olecko",
-            "date": "05.03.2019",
-            "name": "Szkolenie Face-painting",
+            "date": "2019-03-05",
+            "name": "Szkolenie Face Painting",
             "maxAttendees": 6,
             "level": "Podstawowy",
             "descriptionShort": "Maecenas eros dolor, venenatis vitae viverra nec, imperdiet ac neque. Sed at ex lorem. Vestibulum vitae nulla eu diam commodo blandit posuere ut mi.",

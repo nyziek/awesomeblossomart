@@ -6,3 +6,16 @@
     display: flex;
     justify-content: space-between;
 }
+
+.appMainWindow {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    color: $secondaryTextColor;
+    overflow-y: auto;
+
+    background-color: #FFFFFF;
+
+    background-image: url("../../assets/gray-floral.png");
+}
