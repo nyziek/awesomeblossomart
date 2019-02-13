@@ -8,30 +8,36 @@ require("firebase/database");
 class AppYourTrainings extends React.Component {
 
     state = {
-        events: []
+        events: [],
+        loading: true
     };
 
     componentDidMount() {
         firebase.database().ref("/events").on("value", res => {
             const data = res.val();
 
-            console.log(data);
-
             const items = [];
 
             for(let key in data) {
+                const obj = data[key];
+                obj.id = key;
+
                 items.push(data[key])
             }
 
             this.setState({
-                events: items
+                events: items,
+                loading: false
             });
-
-            console.log(items);
         })
     }
 
     render() {
+
+        if(this.state.loading) {
+            return null
+        }
+
         return (
             <table className = "trainingsList">
                 <thead>
@@ -47,7 +53,7 @@ class AppYourTrainings extends React.Component {
                 <tbody>
                     {
                         this.state.events.map((event, index) => (
-                            <AppYourTrainingsListItem key = {index} event = {event}/>
+                            <AppYourTrainingsListItem key = {index} event = {event} events = {this.state.events}/>
                         ))
                     }
                 </tbody>

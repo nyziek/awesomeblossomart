@@ -1,8 +1,14 @@
 import React from 'react';
 import './AppYourTrainingsListItem.scss';
 import {Link} from "react-router-dom";
+import * as firebase from "firebase/app";
+require("firebase/database");
 
 class AppYourTrainingsListItem extends React.Component {
+
+    state = {
+        events: this.props.events
+    };
 
     handleTrainingDescriptionInfoShow = (event) => {
 
@@ -15,8 +21,15 @@ class AppYourTrainingsListItem extends React.Component {
         }
     };
 
+    handleTrainingEdit = (event) => {
+        console.log("edytuję " + this.props.event.id + this.props.event.name + this.props.event.city);
+        console.log(this.state.events);
+    };
+
     handleTrainingDelete = (event) => {
-        console.log("usuwam " + this.props.event.city);
+
+        firebase.database().ref("/events").child(this.props.event.id).remove();
+
     };
 
     render() {
@@ -56,7 +69,7 @@ class AppYourTrainingsListItem extends React.Component {
                 </td>
                 <td>
                     <div className = "editTrainingButtonHolder">
-                        <i className = "fas fa-edit"></i>
+                        <i className = "fas fa-edit" onClick = {this.handleTrainingEdit}></i>
                         <i className = "far fa-trash-alt" onClick = {this.handleTrainingDelete}></i>
                     </div>
                 </td>

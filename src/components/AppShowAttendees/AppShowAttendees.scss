@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.showAttendeesTrainingInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.6rem;
+}
+
+.attendeeList {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.attendeeList th,
+.attendeeList td {
+    background: $primaryTextColor;
+    border: 0.1rem solid $bgColorDarkest;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.2rem 0.1rem 0.2rem;
+    text-align: center;
+}
+
+.attendeeList th {
+    background: $bgColorDarkest;
+    color: $primaryTextColor;
+}

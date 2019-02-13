@@ -11,8 +11,22 @@ class AppJoinTrainingForm extends React.Component {
         surname: "",
         email: "",
         phone: "",
-        paid: false
+        paid: false,
+        event: null,
+        loading: true
     };
+
+    componentDidMount() {
+
+        firebase.database().ref(`events/${this.props.match.params.id}`).on("value", res => {
+            const data = res.val();
+
+            this.setState({
+                event: data,
+                loading: false
+            });
+        })
+    }
 
     handleAttendeeNameChange = (event) => {
 
@@ -52,24 +66,35 @@ class AppJoinTrainingForm extends React.Component {
             phone: this.state.phone
         };
 
-        console.log(newAttendee);
-        console.log(firebase.database().ref('/events/'));
+        const currentEvent = this.state.event;
 
-        //firebase.database().ref('/events').push(newAttendee).then(() => this.props.history.push('/'));
+        if(!currentEvent.attendees) {
+            currentEvent.attendees = [];
+        }
+
+        currentEvent.attendees.push(newAttendee);
+
+        firebase.database()
+            .ref(`events/${this.props.match.params.id}`)
+            .set(currentEvent)
+            .then(() => this.props.history.push('/'));
     };
 
     render() {
+
+        if(this.state.loading) {
+            return null
+        }
+
         return (
             <form className = "addTrainingForm">
 
-                {console.log(this.props.match.params.id)}
-
                 <div className = "addTrainingFormContent">
                     <div className = "trainingInfo">
-                        <h2>{this.props.match.params.name}</h2>
-                        <h3>Poziom: {this.props.match.params.level}</h3>
-                        <h3>Miasto: {this.props.match.params.city}</h3>
-                        <h3>Data: {this.props.match.params.data}</h3>
+                        <h2>{this.state.event.name}</h2>
+                        <h3>Poziom: {this.state.event.level}</h3>
+                        <h3>Miasto: {this.state.event.city}</h3>
+                        <h3>Data: {this.state.event.date}</h3>
                     </div>
                     <div>
                         <label htmlFor = "attendeeName">Imię: </label>

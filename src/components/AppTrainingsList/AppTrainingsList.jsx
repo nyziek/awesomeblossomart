@@ -8,7 +8,8 @@ require("firebase/database");
 class AppTrainingsList extends React.Component {
 
     state = {
-        events: []
+        events: [],
+        loading: true
     };
 
     componentDidMount() {
@@ -21,18 +22,22 @@ class AppTrainingsList extends React.Component {
                 const obj = data[key];
                 obj.id = key;
 
-                items.push(obj)
+                items.push(data[key])
             }
 
             this.setState({
-                events: items
+                events: items,
+                loading: false
             });
-
-            console.log(this.state.events)
         });
     }
 
     render() {
+
+        if(this.state.loading) {
+            return null
+        }
+
         return (
             <table className = "trainingsList">
                 <thead>

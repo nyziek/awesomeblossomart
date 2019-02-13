@@ -11,7 +11,7 @@ class AppAddTrainingForm extends React.Component {
         name: "Szkolenie Face Painting",
         city: "",
         date: "",
-        maxAttendees: 0,
+        maxAttendees: 10,
         level: "Podstawowy",
         descriptionShort: "",
         descriptionFull: ""
