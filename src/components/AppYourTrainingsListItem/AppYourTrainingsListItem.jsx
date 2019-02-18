@@ -27,9 +27,7 @@ class AppYourTrainingsListItem extends React.Component {
     };
 
     handleTrainingDelete = (event) => {
-
         firebase.database().ref("/events").child(this.props.event.id).remove();
-
     };
 
     render() {
@@ -69,7 +67,9 @@ class AppYourTrainingsListItem extends React.Component {
                 </td>
                 <td>
                     <div className = "editTrainingButtonHolder">
-                        <i className = "fas fa-edit" onClick = {this.handleTrainingEdit}></i>
+                        <Link to = {`/edit-training/${this.props.event.id}`}>
+                            <i className = "fas fa-edit"></i>
+                        </Link>
                         <i className = "far fa-trash-alt" onClick = {this.handleTrainingDelete}></i>
                     </div>
                 </td>
