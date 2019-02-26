@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AwesomeBlossomArt Event App
 
-## Available Scripts
+Own project (work in progress).
 
-In the project directory, you can run:
+The app was first create as final project witihn Coder's Lab "JavaScript Developer: React" course.
 
-### `npm start`
+The aim of the project was to create a web app for face painting artist who organizes trainings for other face painters. The app was meant to have following functionalities:
+* adding new events (organizer)
+* setting up attendee number limits (organizer)
+* displaying added events list (organizer)
+* editing events (organizer)
+* deleting events (organizer)
+* displaying available events list (attendee)
+* registering for event (attendee)
+* viewing list of registered attendees (organizer)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The app consists of 3 tabs:
+* Available events (for potential attendees)
+* My events (for organizer)
+* Add event (for organizer)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Technologies used:
+* JS.React
+* HTML
+* Sass
+* Webpack
 
-### `npm test`
+Next steps in project's development:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* adding authentication for organizer, so that My events and Add event tabs are only visible after logging in
+* modifying registering form to include required information (eg. invoice data, etc)
+* modifying event adding form to include more information (eg. event exact location, map, etc)
+* adding RWD
+* adding e-mail notifications
+* adding landing page
+* adjust stying to fit organizer's needs
 
-### `npm run build`
+Preview:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://nyziek.pl/projects/awesomeblossomart/build/
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Screenshots:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 1](./screenshots/awesomeblossomart1.png)
 
-### `npm run eject`
+![Screenshot 2](./screenshots/awesomeblossomart2.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Screenshot 3](./screenshots/awesomeblossomart3.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screenshot 4](./screenshots/awesomeblossomart4.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Project was set up using Create React App (https://github.com/facebook/create-react-app).
