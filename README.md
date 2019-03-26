@@ -2,7 +2,7 @@
 
 Own project (work in progress).
 
-The app was first create as final project witihn Coder's Lab "JavaScript Developer: React" course.
+The app was first created as final project witihn Coder's Lab "JavaScript Developer: React" course.
 
 The aim of the project was to create a web app for face painting artist who organizes trainings for other face painters. The app was meant to have following functionalities:
 * adding new events (organizer)
